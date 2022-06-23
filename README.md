@@ -55,10 +55,11 @@ $ python3 train.py --epochs 30 --lr 0.0001 --batch_size 8
 + Python 3.7
 + Ubuntu 20.04 LTS
 
-### Working video
+### 5. Working video
 
 https://user-images.githubusercontent.com/63548541/175263594-90140005-540c-467b-b42f-4648c0e92eb1.mp4
 
+# Detailed Project Report: https://drive.google.com/file/d/1E5o1nOsbKbwT3pMwrMMl_3RMYuTg9NtT/view?usp=sharing
 
 ## License
 
