@@ -23,7 +23,7 @@ This repo contains trained model and Dat
 - arm_description
 This pacakge contains URDF file of our 5-DOF Robotic arm. 
 - arm1_moveit_config
-This package contains Moveit files for our Robotic arm.
+This package contains Moveit config files for our Robotic arm.
 - grasp_ros
 This package contains all the scripts required for grasp prediction, visualising Kinect data, Planning arm trajectory.
 
