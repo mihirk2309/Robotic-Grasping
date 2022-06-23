@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<robot name="robotic_arm">
+	<link name="world"/>
+	<link name="base_link">
+		<visual>
+			<geometry>
+				<cylinder length="0.007" radius="0.05"/>
+			</geometry>
+			<material name="silver">
+				<color rgba="0.75 0.75 0.75 1"/>
+			</material>
+			<origin rpy="0 0 0" xyz="0 0 0.0"/>
+		</visual>
+	</link>
+	<joint name="fixed" type="fixed">
+		<parent link="world"/>
+		<child link="base_link"/>
+	</joint>
+
+	<link name="torso">
+		<visual>
+			<geometry>
+				<cylinder length="0.03" radius="0.05"/>
+			</geometry>
+			<material name="silver">
+				<color rgba="0.75 0.75 0.75 1"/>
+			</material>
+			<origin rpy="0 0 0" xyz="0 0 0.009"/>
+		</visual>
+	</link>
+	<joint name="hip" type="continuous">
+		<axis xyz="0 0 1"/>
+		<parent link="base_link"/>
+		<child link="torso"/>
+		<origin rpy="0 0 0" xyz="0.0 0.0 0.009"/>
+	</joint>
+
+	<link name="upper_arm">
+		<visual>
+			<geometry>
+				<cylinder length="0.155" radius="0.02"/>
+			</geometry>
+			<material name="silver"/>
+			<origin rpy="0 1.5708 0" xyz="-0.075 0 0.0"/>
+		</visual>
+	</link>
+	<joint name="shoulder" type="continuous">
+		<axis xyz="0 1 0"/>
+		<parent link="torso"/>
+		<child link="upper_arm"/>
+		<origin rpy="0 1.5708 0" xyz="0.0 0.0 0.03"/>
+	</joint>-
+
+	<link name="lower_arm">
+		<visual>
+			<geometry>
+				<cylinder length="0.122" radius="0.02"/>
+			</geometry>
+			<material name="silver"/>
+			<origin rpy="0 0 0" xyz="0 0 0.061"/>
+		</visual>
+	</link>
+	<joint name="elbow" type="continuous">
+		<axis xyz="0 1 0"/>
+		<parent link="upper_arm"/>
+		<child link="lower_arm"/>
+		<origin rpy="0 0 0" xyz="-0.155 0.0 0.0"/>
+	</joint>
+
+	<link name="3dprinted">
+		<visual>
+			<geometry>
+				<cylinder length="0.070" radius="0.02"/>
+			</geometry>
+			<material name="silver"/>
+			<origin rpy="0 0 0" xyz="0 0 0.035"/>
+		</visual>
+	</link>
+	<joint name="3dprinted" type="continuous">
+		<axis xyz="0 1 0"/>
+		<parent link="lower_arm"/>
+		<child link="3dprinted"/>
+		<origin rpy="0 0 0" xyz="0.0 0.0 0.121"/>
+	</joint>
+
+	<link name="hand">
+		<visual>
+			<geometry>
+				<box size="0.05 0.05 0.05"/>
+			</geometry>
+			<material name="silver"/>
+		</visual>
+	</link>
+	<joint name="wrist" type="continuous">
+		<axis xyz="1 0 0"/>
+		<parent link="3dprinted"/>
+		<child link="hand"/>
+		<origin rpy="0 0 0" xyz="0.045 0.0 0.07"/>
+	</joint>
+</robot>

@@ -1,0 +1,24 @@
+<package format="2">
+	<name>arm_description</name>
+	<version>0.0.2</version>
+	<description>
+		This package constains the model files of the omnibase(omniwheeled robot)
+	</description>
+
+	<license>BSD</license>
+
+	<maintainer email="mihirk2309@gmail.com">Mihir Kulkarni</maintainer>
+
+	<author>Mihir Kulkarni</author>
+
+
+
+	<buildtool_depend>catkin</buildtool_depend>
+	<!-- <buildtool_depend>catkin_simple</buildtool_depend> -->
+
+	<depend>geometry_msgs</depend>
+	<depend>rospy</depend>
+	<depend>roscpp</depend>
+	<depend>std_msgs</depend>
+
+</package>
