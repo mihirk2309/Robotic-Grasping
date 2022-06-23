@@ -1,0 +1,6 @@
+<launch>
+  <!-- <include file="$(find kinect2_bridge)/launch/kinect2_bridge.launch"/> -->
+  <node type="rviz" name="rviz" pkg="rviz" args="-d $(find grasp_ros)/rviz/visualise_kinectdata.rviz" />
+</launch>
+
+

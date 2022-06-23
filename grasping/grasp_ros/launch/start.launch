@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+	<node name ="plan" pkg="arm_description" type="plan2.py" output="screen"/> 
+	<node name ="send" pkg="arm_description" type="send.py" output="screen"/> 
+
+</launch>
