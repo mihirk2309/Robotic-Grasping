@@ -3,7 +3,7 @@
 
 [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
-*Best Final Year Project Award at Electronics and Telecomm Department, College of Engineering Pune (COEP)*.
+### *Best Final Year Project Award at Electronics and Telecomm Department, College of Engineering Pune (COEP)*.
 
 ### Problem Statement: 
 The problem statement consists of grasping unknown, unordered, and ran- domly oriented objects. Normally arms can pick objects that are initially placed in a predefined order for example an assembly line. The robot is hard- coded to pick and place known items. But what if the items are unknown or placed in a random manner or what if there are multiple objects stacked in a place and we want to separate items individually. This is where a CV-based algorithm is needed. The arm should automatically orient itself in a suitable grasping position which will be different for different objects and given by the algorithm. The two main points of problem statement that we wish to address are: 
