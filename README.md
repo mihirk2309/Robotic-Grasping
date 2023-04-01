@@ -3,6 +3,29 @@
 
 [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
+### Deep Learning based end-to-end Grasping Pipeline on a lowcost 5-DOF Robotic arm ( [pdf](https://drive.google.com/file/d/1Xy5vnHGXHmY1KgkszbGoYdwYoF_I1hM3/view?usp=share_link) | [Xplore](https://ieeexplore.ieee.org/document/10040180) )
+
+*[Pranay Junare](https://www.linkedin.com/in/pranay-junare/), [Mihir Deshmukh](https://www.linkedin.com/in/mihir-deshmukh-v15/), [Mihir Kulkarni](https://www.linkedin.com/in/mihir-kulkarni-ba3308171/)*
+
+IEEE 19th India Council International Conference (INDICON), 2022
+
+#### Citing
+
+If you find our work useful, please consider citing:
+
+```bash
+@INPROCEEDINGS{10040180,
+  author={Junare, Pranay and Deshmukh, Mihir and Kulkarni, Mihir and Bartakke, Prashant},
+  booktitle={2022 IEEE 19th India Council International Conference (INDICON)}, 
+  title={Deep Learning based end-to-end Grasping Pipeline on a lowcost 5-DOF Robotic arm}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={1-6},
+  doi={10.1109/INDICON56171.2022.10040180}
+}
+```
+
 ### *Best Final Year Project Award at Electronics and Telecommunication Department, College of Engineering Pune (COEP)*. 
 
 ### Problem Statement: 
